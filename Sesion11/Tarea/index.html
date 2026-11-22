@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar contraseña</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Cambiar contraseña</h1>
+        <form id="formClave">
+            <label for="clave">Contraseña nueva</label>
+            <input type="password" id="clave">
+
+            <label for="confirmar">Confirmar contraseña</label>
+            <input type="password" id="confirmar">
+
+            <ul id="requisitos">
+                <li id="req-longitud">❌ Al menos 8 caracteres</li>
+                <li id="req-mayuscula">❌ Una mayúscula</li>
+                <li id="req-minuscula">❌ Una minúscula</li>
+                <li id="req-numero">❌ Un número</li>
+                <li id="req-simbolo">❌ Un símbolo</li>
+            </ul>
+
+            <p>Fuerza: <strong id="fuerza">Débil</strong></p>
+            <small id="mensaje"></small>
+
+            <button type="submit" id="guardar" disabled>Guardar</button>
+        </form>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
