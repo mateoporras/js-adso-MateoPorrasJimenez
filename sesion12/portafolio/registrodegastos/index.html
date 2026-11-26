@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis gastos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>💸 Mis gastos</h1>
+    <form id="formGasto" novalidate>
+      <input id="descripcion" placeholder="Descripción">
+      <input id="monto" type="number" placeholder="Monto">
+      <select id="categoria">
+        <option value="">Categoría</option>
+        <option>Transporte</option>
+        <option>Comida</option>
+        <option>Estudio</option>
+        <option>Entretenimiento</option>
+        <option>Otros</option>
+      </select>
+      <input id="fecha" type="date">
+      <button type="submit">Agregar</button>
+    </form>
+    <p class="error" id="error"></p>
+    <div class="tabla">
+      <table>
+        <thead>
+          <tr><th>Fecha</th><th>Descripción</th><th>Categoría</th><th>Monto</th><th></th></tr>
+        </thead>
+        <tbody id="tablaGastos"></tbody>
+      </table>
+    </div>
+    <h2>Total: <span id="total">$ 0</span></h2>
+    <h3>Por categoría</h3>
+    <ul id="porCategoria"></ul>
+    <button id="btnBorrarTodo" class="peligro">Borrar todo</button>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

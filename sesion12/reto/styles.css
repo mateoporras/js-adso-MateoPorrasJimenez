@@ -1,0 +1,11 @@
+body { font-family: system-ui, sans-serif; background: #f4f4f4; }
+main { max-width: 720px; margin: 2rem auto; background: white; padding: 1.5rem; border-radius: 16px; }
+form { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.5rem; }
+input, select { padding: 0.6rem; border: 2px solid #ccc; border-radius: 8px; }
+button { padding: 0.6rem 1rem; border: none; border-radius: 8px; background: #39a900; color: white; cursor: pointer; }
+.peligro { background: #c0392b; }
+.error { color: #c0392b; min-height: 1.2em; }
+.tabla { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { text-align: left; padding: 0.5rem; border-bottom: 1px solid #eee; }
+td button { background: transparent; }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a curso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+    <h1>Inscripción a curso complementario</h1>
+    <form id="formInscripcion" novalidate>
+        <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre">
+        <small class="error" id="error-nombre"></small>
+        </div>
+        <div class="campo">
+        <label for="documento">Número de documento</label>
+        <input id="documento" inputmode="numeric">
+        <small class="error" id="error-documento"></small>
+        </div>
+        <div class="campo">
+        <label for="correo">Correo</label>
+        <input id="correo" type="email">
+        <small class="error" id="error-correo"></small>
+        </div>
+        <div class="campo">
+        <label for="telefono">Celular</label>
+        <input id="telefono" inputmode="numeric">
+        <small class="error" id="error-telefono"></small>
+        </div>
+        <div class="campo">
+        <label for="programa">Curso</label>
+        <select id="programa">
+            <option value="">Elige un curso</option>
+            <option>Excel intermedio</option>
+            <option>Inglés básico</option>
+            <option>Emprendimiento digital</option>
+            <option>Fotografía con celular</option>
+        </select>
+        <small class="error" id="error-programa"></small>
+        </div>
+        <fieldset class="campo">
+        <legend>Jornada</legend>
+        <label><input type="radio" name="jornada" value="Mañana"> Mañana</label>
+        <label><input type="radio" name="jornada" value="Tarde"> Tarde</label>
+        <label><input type="radio" name="jornada" value="Noche"> Noche</label>
+        <small class="error" id="error-jornada"></small>
+        </fieldset>
+        <div class="campo">
+        <label><input type="checkbox" id="terminos"> Autorizo el tratamiento de mis datos personales</label>
+        <small class="error" id="error-terminos"></small>
+        </div>
+        <button type="submit">Inscribirme</button>
+    </form>
+    <div id="resumen"></div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
